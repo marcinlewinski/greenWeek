@@ -5,7 +5,6 @@ import Welcome from "./components/Welcome";
 import Contact from "./components/Contact";
 import About from "./components/About";
 
-
 import { useState } from "react";
 
 function App() {
