@@ -1,7 +1,10 @@
 import './App.css';
+import Welcome from './components/welcome/Welcome';
 
 function App() {
-  return 
+  return (<>
+  <Welcome/>
+  </>)
 }
 
 export default App;
