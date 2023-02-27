@@ -1,3 +1,5 @@
+// TEST-DATA-TO-BE-REMOVED
+
 const data = [
   {
     title: 'Plastic flowers',
@@ -16,6 +18,12 @@ const data = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     img: 'https://www.nspackaging.com/wp-content/uploads/sites/4/2019/03/shutterstock_1492626947.jpg',
+  },
+  {
+    title: 'Plastic bottles flowers',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    img: 'https://i.ytimg.com/vi/KwoJLD-7j3M/maxresdefault.jpg',
   },
 ];
 
