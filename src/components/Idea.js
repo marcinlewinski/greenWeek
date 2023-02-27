@@ -1,10 +1,14 @@
-const Idea = ({ title, description }) => {
+const Idea = ({ img, title, description }) => {
   return (
-    <div>
-      <img src="/" alt="pic" />
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <button>Click me</button>
+    <div className="idea">
+      <img className="idea-img" src={img} alt="{title}" />
+      <div className="idea-content">
+        <h1 className="idea-title">{title}</h1>
+        <p className="idea-description">{description}</p>
+      </div>
+      <button type="submit" className="idea-btn">
+        Discover more!
+      </button>
     </div>
   );
 };
