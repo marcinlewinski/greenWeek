@@ -1,7 +1,7 @@
 import React from 'react';
 import welcomeImg from '../../resources/welcomeImg.jpg';
 
-function WelcomeImgComponent() {
+function WelcomeImg() {
 
     return (<>
         <img className="welcome-img" alt="welcome-img" src={welcomeImg} />
@@ -9,4 +9,4 @@ function WelcomeImgComponent() {
     )
 }
 
-export default WelcomeImgComponent
+export default WelcomeImg
