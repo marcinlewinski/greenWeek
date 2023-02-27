@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Ideas from "./components/Ideas";
-import Welcome from "./components/Welcome";
+import Welcome from "./components/welcome/Welcome";
 import Contact from "./components/Contact";
 import About from "./components/About";
 
