@@ -1,12 +1,12 @@
 import React from 'react';
-import WelcomeImgComponent from './WelcomeImgComponent';
-import WelcomeIntroductionComponent from './WelcomeIntroductionComponent';
+import WelcomeImg from './WelcomeImg';
+import WelcomeIntroduction from './WelcomeIntroduction';
 
 function Welcome() {
 
     return (<><div className='welcome'>
-        <WelcomeIntroductionComponent />
-        <WelcomeImgComponent />
+        <WelcomeIntroduction />
+        <WelcomeImg />
     </div>
     </>)
 }

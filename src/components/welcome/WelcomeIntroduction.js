@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WelcomeIntroductionComponent() {
+function WelcomeIntroduction() {
 
     const introduction = "10 THINGS YOU CAN DO TO HELP SAVE OUR PLANET. The scale of the challenges facing our planet can seem daunting, but we can all do something. Here are 10 simple ways you can help reduce your impact, and help in the fight against climate change.";
 
@@ -11,4 +11,4 @@ function WelcomeIntroductionComponent() {
     )
 }
 
-export default WelcomeIntroductionComponent
+export default WelcomeIntroduction
