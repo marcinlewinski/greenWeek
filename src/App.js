@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import Ideas from "./components/ideas/Ideas";
 import Welcome from "./components/welcome/Welcome";
 import Contact from "./components/Contact";
-import About from "./components/About";
+import About from './components/about/About';
 
 import { useState } from "react";
 
