@@ -6,11 +6,6 @@ import 'react-pure-modal/dist/react-pure-modal.min.css';
 const FormPopup = ({ modal, setModal, handleSubmit }) => (
   <PureModal
     header="REGISTRATION FORM"
-    footer={
-      <div>
-        <button onClick={handleSubmit}>Submit</button>
-      </div>
-    }
     isOpen={modal}
     closeButton="X"
     closeButtonPosition="header"
@@ -19,7 +14,7 @@ const FormPopup = ({ modal, setModal, handleSubmit }) => (
       return true;
     }}
   >
-    <Contact />
+    <Contact handleSubmit={handleSubmit} formpopup={true} />
   </PureModal>
 );
 
