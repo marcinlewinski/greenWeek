@@ -32,11 +32,7 @@ const Workshop = ({ img, title, date, place, topics, description, info }) => {
       </div>
       <div className="text-wrapper">
         {setWorkshopContent()}
-        <button
-          type="submit"
-          className="workshop-btn"
-          onClick={() => setModal({ isOpen: true, title: title })}
-        >
+        <button type="submit" className="workshop-btn" onClick={() => setModal({ isOpen: true })}>
           REGISTER
         </button>
       </div>
@@ -44,7 +40,7 @@ const Workshop = ({ img, title, date, place, topics, description, info }) => {
         modal={modal}
         setModal={setModal}
         handleSubmit={handleSubmit}
-        workshopTitle={title}
+        workshopTitle={`${title}-${date}-${place}`}
       />
     </div>
   );
