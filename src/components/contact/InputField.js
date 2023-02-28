@@ -1,11 +1,11 @@
 function InputField(props) {
-    const { key, type, label, values, onChange, className, error, touched } = props;
+    const {onBlure, touched,  className,error,onChange,values, key, type, label,    } = props;
 
     return (
         <>
             <label htmlFor={type}>{label}</label>
-            <input className={error[type] ? className : ""} onChange={onChange} value={values} id={type} key={key} type={type} placeholder={label}></input>
-            {error[type] &&  <p className="error">{error[type]}</p>}
+            <input className={error[type] && touched ? className : ""} onBlur={onBlure} onChange={onChange} value={values} id={type} key={key} type={type} placeholder={label}></input>
+            {error[type] && touched && <p className="error">{error[type]}</p>}
         </>
 
 

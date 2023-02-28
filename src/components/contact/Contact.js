@@ -34,7 +34,7 @@ function Contact() {
             </div>
             <form onSubmit={formik.handleSubmit} autoComplete="off">
                 <div>
-                    {formData && formData.map((data, index) => <InputField touched={formik.touched[data.name]} className={"input-error"} error={formik.errors} onChange={formik.handleChange} value={formik.values} id={data.name} key={index} type={data.name} label={data.label}></InputField>)}
+                    {formData && formData.map((data, index) => <InputField onBlure={formik.handleBlur} touched={formik.touched[data.name]} className={"input-error"} error={formik.errors} onChange={formik.handleChange} value={formik.values} id={data.name} key={index} type={data.name} label={data.label}></InputField>)}
                 </div>
                 <div>
                     <button type="submit" >Submit</button>
