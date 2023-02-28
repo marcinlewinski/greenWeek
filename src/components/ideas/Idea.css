@@ -1,0 +1,40 @@
+.idea {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex: 1 1 25em;
+    min-width: 26vw;
+    aspect-ratio: 5/4;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2em;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px var(--color-dark) solid;
+}
+.idea-img{
+    width: 100px;
+    height: 100px;
+}
+.image-wrapper{
+
+}
+.text-wrapper{
+
+}
+.idea-content{
+
+}
+.idea-title{
+
+}
+.idea-description{
+
+}
+.idea-btn{
+
+}
+.idea{
+    
+}

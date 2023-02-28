@@ -4,6 +4,7 @@
   height: 6em;
   width: 100vw;
   justify-content: space-around;
+  background-color: white;
   box-shadow: inset 0px -3px 0px -1px green;
 }
 

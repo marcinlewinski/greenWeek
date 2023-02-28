@@ -1,12 +1,17 @@
 body {
+  --font-primary: 'Montserrat';
+  --color-primary: white;
+  --color-greenyellow: #A5F200;
+  --color-lightgreen: #6eb411;
+  --color-green: #528d05;
+  --color-darkgreen: #1D7100;
+  --color-dark: #0D1137;
+  --color-lightgray: #f4f4f4;
+  --color-gray: #bbbbbb;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-primary);
   display: flex;
-  flex-direction: column;
+  min-height: fit-content;
   width: 100vw;
 }
 

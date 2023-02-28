@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/header/Header";
-import Ideas from "./components/Ideas";
+import Ideas from "./components/ideas/Ideas";
 import Welcome from "./components/welcome/Welcome";
 import Contact from "./components/Contact";
 import About from './components/about/About';
