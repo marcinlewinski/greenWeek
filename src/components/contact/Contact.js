@@ -1,7 +1,7 @@
 import InputField from "./InputField";
 import { useFormik } from "formik";
 import { useState } from 'react';
-import basicSchema from "./schemas";
+import basicSchema from ".";
 
 function Contact() {
     const [formData, setFormData] = useState([

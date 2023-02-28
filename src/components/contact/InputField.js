@@ -5,7 +5,7 @@ function InputField(props) {
         <>
             <label htmlFor={type}>{label}</label>
             <input className={error[type] ? className : ""} onChange={onChange} value={values} id={type} key={key} type={type} placeholder={label}></input>
-            {error[type] && <p touched className="error">{error[type]}</p>}
+            {error[type] &&  <p className="error">{error[type]}</p>}
         </>
 
 
