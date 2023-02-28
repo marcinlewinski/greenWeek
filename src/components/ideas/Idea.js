@@ -1,14 +1,24 @@
 import "./Idea.css";
-const Idea = ({ img, title, description, handleModal }) => {
+import { useState } from 'react';
+import ModalDiscoverMore from "../modal/ModalDiscoverMore";
+
+const Idea = ({ img, title, description }) => {
+  const [modal, setModal] = useState(false);
+
+  const closeModal = () => {
+    setModal(false);
+  }
+
   return (
     <div className="idea">
       <div className='image-wrapper' style={{backgroundImage: `url(${img})`}}></div>
       <div className="idea-content">
         <h1 className="idea-title">{title}</h1>
         <p className="idea-description">{description}</p>
-        <button type="submit" className="idea-btn" onClick={handleModal}>
+        <button className="idea-btn" onClick={() => setModal(true)}>
           Discover more!
         </button>
+        <ModalDiscoverMore open={modal} close={closeModal} />
       </div>
     </div>
   );
