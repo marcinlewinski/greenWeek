@@ -17,6 +17,7 @@ const dataWorkshops = [
   },
   {
     img: 'https://www.childandfamily.foundation/sites/default/files/styles/banner_4_1/public/article/banner/DSCN1041.JPG?h=c67361d1&itok=vnupCOyt',
+    title: 'Plastic Party',
     date: '22 April 2023',
     place: 'Cracow',
     topics: ['Supply Chain Design in Plastics Recycling'],
