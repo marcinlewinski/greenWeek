@@ -1,5 +1,14 @@
 import "./Idea.css";
-const Idea = ({ img, title, description, handleModal }) => {
+import { useState } from 'react';
+import ModalDiscoverMore from "../ModalDiscoverMore";
+
+const Idea = ({ img, title, description }) => {
+  const [modal, setModal] = useState(false);
+
+  const closeModal = () => {
+    setModal(false);
+  }
+
   return (
     <div className="idea">
       <div className="image-wrapper">
@@ -10,9 +19,10 @@ const Idea = ({ img, title, description, handleModal }) => {
           <h1 className="idea-title">{title}</h1>
           <p className="idea-description">{description}</p>
         </div>
-        <button type="submit" className="idea-btn" onClick={handleModal}>
+        <button className="idea-btn" onClick={() => setModal(true)}>
           Discover more!
         </button>
+        <ModalDiscoverMore open={modal} close={closeModal} />
       </div>
     </div>
   );
