@@ -12,20 +12,26 @@ const Workshop = ({ img, title, date, place, topics, description, info }) => {
     setModal(false);
   };
 
+  const setWorkshopContent = () => {
+    return (
+      <div className="workshop-content">
+        <h1 className="workshop-title">{title}</h1>
+        <h3 className="workshop-date">{date}</h3>
+        <h3 className="workshop-place">{place}</h3>
+        <p className="workshop-topics">{topics}</p>
+        <p className="workshop-description">{description}</p>
+        <p className="workshop-info">{info}</p>
+      </div>
+    );
+  };
+
   return (
     <div className="workshop">
       <div className="workshop-wrapper">
         <img className="workshop-img" src={img} alt="{title}" />
       </div>
       <div className="text-wrapper">
-        <div className="workshop-content">
-          <h1 className="workshop-title">{title}</h1>
-          <h3 className="workshop-date">{date}</h3>
-          <h3 className="workshop-place">{place}</h3>
-          <p className="workshop-topics">{topics}</p>
-          <p className="workshop-description">{description}</p>
-          <p className="workshop-info">{info}</p>
-        </div>
+        {setWorkshopContent()}
         <button type="submit" className="workshop-btn" onClick={() => setModal(true)}>
           REGISTER
         </button>
