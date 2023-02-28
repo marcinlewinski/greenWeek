@@ -5,7 +5,7 @@ import 'react-pure-modal/dist/react-pure-modal.min.css';
 
 const FormPopup = ({ modal, setModal, handleSubmit }) => (
   <PureModal
-    header="REGISTRATION FORM"
+    header="REGISTRATION FORM "
     isOpen={modal}
     closeButton="X"
     closeButtonPosition="header"
