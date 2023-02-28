@@ -28,6 +28,7 @@ const Ideas = () => {
   return (
     <div className="ideas">
       <div className="ideas-search">
+        <img className="loupe" src='./loupe.png'></img>
         <input
           className="ideas-input"
           type="text"
