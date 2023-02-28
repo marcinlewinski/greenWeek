@@ -32,11 +32,16 @@ const Workshop = ({ img, title, date, place, topics, description, info }) => {
       </div>
       <div className="text-wrapper">
         {setWorkshopContent()}
-        <button type="submit" className="workshop-btn" onClick={() => setModal(true)}>
+        <button type="submit" className="workshop-btn" onClick={() => setModal({ isOpen: true })}>
           REGISTER
         </button>
       </div>
-      <FormPopup modal={modal} setModal={setModal} handleSubmit={handleSubmit} />
+      <FormPopup
+        modal={modal}
+        setModal={setModal}
+        handleSubmit={handleSubmit}
+        workshopTitle={`${title}-${date}-${place}`}
+      />
     </div>
   );
 };

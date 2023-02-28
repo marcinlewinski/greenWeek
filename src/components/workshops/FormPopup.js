@@ -3,7 +3,7 @@ import Contact from '../../components/contact/Contact';
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 
-const FormPopup = ({ modal, setModal, handleSubmit }) => (
+const FormPopup = ({ modal, setModal, handleSubmit, workshopTitle }) => (
   <PureModal
     header="REGISTRATION FORM "
     isOpen={modal}
@@ -14,7 +14,7 @@ const FormPopup = ({ modal, setModal, handleSubmit }) => (
       return true;
     }}
   >
-    <Contact handleSubmit={handleSubmit} formpopup={true} />
+    <Contact handleSubmit={handleSubmit} formpopup={true} workshopTitle={workshopTitle} />
   </PureModal>
 );
 
