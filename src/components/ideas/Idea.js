@@ -1,6 +1,6 @@
 import "./Idea.css";
 import { useState } from 'react';
-import ModalDiscoverMore from "../ModalDiscoverMore";
+import ModalDiscoverMore from "../modal/ModalDiscoverMore";
 
 const Idea = ({ img, title, description }) => {
   const [modal, setModal] = useState(false);
