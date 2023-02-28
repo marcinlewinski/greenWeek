@@ -1,0 +1,13 @@
+.welcome{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .welcome-img{
+    margin: 20px;
+    height: 150%;
+    width: 150%;
+  }
+  
+  .welcome-intro{
+    margin: 20px;
+  }

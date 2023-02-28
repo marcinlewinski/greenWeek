@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import './Ideas.css'
 import Idea from './Idea';
-import data from '../database/data';
+import data from '../../database/data';
 
 const Ideas = () => {
   const [search, setSearch] = useState(data);
@@ -34,9 +35,12 @@ const Ideas = () => {
           onChange={getFilteredIdeas}
         />
       </div>
-      {search.map((item, index) => (
+      <div className='ideas-container'>
+        {search.map((item, index) => (
         <Idea key={index} {...item} handleModal={handleModal} />
-      ))}
+        ))}
+      </div>
+      
     </div>
   );
 };
