@@ -1,0 +1,136 @@
+.about-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width:100%;
+    background-size: cover;
+    padding-bottom: 2.5em;
+    overflow: hidden;
+}
+
+.about-content{
+    --p:1.4em;
+    width: 400px;
+    aspect-ratio: 1/1;
+    background-color: var(--color-lightgray);
+    border-radius: 50%;
+    margin:30px auto;
+    font-size:smaller;
+    text-align:justify;
+    overflow: hidden;
+}
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 3em;
+}
+.about-content i,
+.about-content::before {
+  content: '';
+  float: left;
+  height:100%;
+  width: 50%;
+  shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+}
+
+.about-content i {
+  float: right;
+  shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+}
+
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.about-decoration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1em solid var(--color-green);
+}
+
+@media (min-width: 1200px) {
+    .about-decoration{
+        width: 45%;  
+        aspect-ratio: 1/1; 
+    }
+    .about-content{
+        width: 80%;   
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-decoration{
+        width: 45%;  
+        aspect-ratio: 1/1; 
+    }
+    .about-content{
+        width: 80%;   
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-decoration{
+        width: 55%;  
+        aspect-ratio: 1/1; 
+    }
+    .about-content{
+        width: 70%;   
+    }
+    h1 {
+        padding-top: 2.5em;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-decoration{
+        width: 65%;  
+        aspect-ratio: 1/1; 
+    }
+    .about-content{
+        width: 80%;   
+    }
+    h1 {
+        padding-top: 4em;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .about-decoration{
+        width: 75%;  
+        aspect-ratio: 1/1; 
+    }
+    h1 {
+        padding-top: 3em;
+    }
+    
+}
+
+@media (max-width: 530px) and (orientation:portrait) {
+    .about-decoration{
+        width: 100%; 
+        border: none;
+    }
+    .about-content{
+        width: 90%;   
+    }
+    h1 {
+        text-align: center;
+        font-size: xx-large;
+        padding-top: 2em;
+    }
+}
+
+
+
+        
+
+            

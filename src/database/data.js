@@ -4,7 +4,7 @@ const data = [
   {
     title: 'Bring your own reusable bags',
     description: 'When shopping, its easy to bring your own reusable bags instead of relying on single-use plastic bags. Not only is it better for the environment, but it can also save you money in the long run.Reusable bags come in all shapes and sizes, so you can find ones that work for your needs. Some are foldable and compact, making them easy to carry around, while others are sturdier and can hold heavier items.',
-    img: 'https://cdn0.woolworths.media/content/wowproductimages/large/675287.jpg',
+    img: 'https://www.harmony-textile.com/c/445-category_default/bag-pouch.jpg',
     plasticWaste: '0kg'
   },
   {
@@ -22,7 +22,7 @@ const data = [
   {
     title: 'Use glass containers or reusable silicone bags',
     description: 'Plastic bags and containers are a major source of plastic waste, with millions of them discarded every day. Choosing glass containers or reusable silicone bags for food storage can help reduce this waste and keep your food fresher for longer..',
-    img: 'https://www.ikea.com/gb/en/images/products/ikea-365-food-container-with-lid-square-glass-plastic__0594413_pe675730_s5.jpg?f=s',
+    img: 'https://www.pamperedchef.ca/iceberg/com/product/100223-lg.jpg',
     plasticWaste: '1.5kg'
   },
   {

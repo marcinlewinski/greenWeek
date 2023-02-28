@@ -1,15 +1,21 @@
-function AboutDetail({ img, title, description }) {
+import "./AboutDetails.css";
 
-    return (<>
-        <div className='about'>
+function AboutDetail({ img, title, description }) {
+  return (
+    <>
+      <div className="about-detail">
+        <div className="image-wrapper" style={{ backgroundImage: `url(${img})` }}>
+          <div className="about-decoration">
             <div className="about-content">
-                <h1 className="about-title">{title}</h1>
-                <img className="about-title" src={img}></img>
-                <p className="about-description">{description}</p>
+              <i></i>
+              <h1>{title}</h1>
+              {description}
             </div>
+          </div>
         </div>
+      </div>
     </>
-    )
+  );
 }
 
-export default AboutDetail
+export default AboutDetail;
