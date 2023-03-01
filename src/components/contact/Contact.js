@@ -12,6 +12,7 @@ function Contact({ formpopup, workshopTitle }) {
     { name: 'message', label: 'message', value: '' },
   ]);
 
+
   const formik = useFormik({
     initialValues: {
       firstName: '',
@@ -39,20 +40,20 @@ function Contact({ formpopup, workshopTitle }) {
           {formData &&
             formData.map((data, index) => (
               <InputField
-                touched={formik.touched[data.name]}
-                className={'input-error'}
-                error={formik.errors}
-                onChange={formik.handleChange}
-                value={formik.values}
-                id={data.name}
-                key={index}
-                type={data.name}
-                label={data.label}
-                formpopup={formpopup}
-                workshopTitle={workshopTitle}
+              onBlure={formik.handleBlur} 
+              touched={formik.touched[data.name]}
+              className={"input-error"}
+              error={formik.errors} 
+              onChange={formik.handleChange} 
+              value={formik.values} 
+              id={data.name} key={index}
+              type={data.name}
+              label={data.label}
+              formpopup={formpopup}
+              workshopTitle={workshopTitle}
               ></InputField>
             ))}
-        </div>
+  </div>
         <div>
           <button onClick={formik.handleSubmit} type="submit">
             Submit
