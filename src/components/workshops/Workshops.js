@@ -1,5 +1,6 @@
 import Workshop from './Workshop';
 import dataWorkshops from '../../database/dataWorkshops';
+import './Workshops.css'
 
 const Workshops = () => {
   return (

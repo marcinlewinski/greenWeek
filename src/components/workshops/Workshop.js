@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import FormPopup from '../../components/workshops/FormPopup';
+import './Workshop.css'
 
 const Workshop = ({ img, title, date, place, duration, description, price }) => {
   const [modal, setModal] = useState(false);
@@ -12,8 +13,7 @@ const Workshop = ({ img, title, date, place, duration, description, price }) => 
     setModal(false);
   };
 
-  const setWorkshopContent = () => {
-    return (
+  const setWorkshopContent = () => (
       <div className="workshop-content">
         <h1 className="workshop-title">{title}</h1>
         <h3 className="workshop-date">{date}</h3>
@@ -22,8 +22,8 @@ const Workshop = ({ img, title, date, place, duration, description, price }) => 
         <p className="workshop-duration">{duration}</p>
         <p className="workshop-info">{price}</p>
       </div>
-    );
-  };
+  );
+
 
   return (
     <div className="workshop">
