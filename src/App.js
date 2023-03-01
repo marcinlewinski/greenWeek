@@ -9,14 +9,26 @@ import About from './components/about/About';
 import { useState } from 'react';
 
 function App() {
-  const [content, setContent] = useState(<Welcome />);
+  const [content, setContent] = useState(<Welcome onSolutionClick={() => setIdeasTabActive()} />);
   const [menuChoices, setMenuChoices] = useState([
-    { elemet: <Welcome />, text: 'WELCOME', active: false },
+    { elemet: <Welcome onSolutionClick={() => setIdeasTabActive()} />, text: 'WELCOME', active: false },
     { elemet: <Ideas />, text: 'IDEAS', active: false },
     { elemet: <Workshops />, text: 'WORKSHOPS', active: false },
     { elemet: <About />, text: 'ABOUT US', active: false },
     { elemet: <Contact />, text: 'CONTACT', active: false },
   ]);
+  
+  function setIdeasTabActive() {
+    setContent(<Ideas />);
+    setMenuChoices((menuChoices) => {
+      return menuChoices.map((choice) => {
+        if (choice.text === "IDEAS") {
+          return { ...choice, active: true };
+        }
+        return { ...choice, active: false };
+      });
+    });
+  }
 
   function changePage(event) {
     const newChoices = [...menuChoices];
