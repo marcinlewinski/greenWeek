@@ -1,57 +1,52 @@
-.welcome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-    background-size: cover;
-  }
-  .welcome-img{
-    position: absolute;
-    object-fit: cover;    
-  }
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  background-size: cover;
+}
+.welcome-img {
+  position: absolute;
+  object-fit: cover;
+}
 
-  .text-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    width:80%;
-    background-color: white;
-    opacity: 75%;
-    border-radius: 25px;
-  }
-  
-  .welcome-intro{
-    margin: 20px;
-  }
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  opacity: 75%;
+  border-radius: 25px;
+}
 
-.welcome-text{
+.welcome-intro {
+  margin: 20px;
+}
+
+.welcome-text {
   font-size: large;
   text-align: justify;
   padding: 0em 5em;
 }
 
-
 @media only screen and (min-width: 1000px) {
-  .welcome-text{
+  .welcome-text {
     padding: 0em 8em;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  
-  .welcome-text{
+  .welcome-text {
     padding: 0em 2em;
     font-size: large;
   }
 }
 
 @media only screen and (max-width: 300px) {
-  .welcome-text{
+  .welcome-text {
     padding: 0em 0.5em;
   }
 }
-
-
-
