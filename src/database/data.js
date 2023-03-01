@@ -5,7 +5,7 @@ const data = [
     title: 'Bring your own reusable bags',
     description: 'When shopping, its easy to bring your own reusable bags instead of relying on single-use plastic bags. Not only is it better for the environment, but it can also save you money in the long run.Reusable bags come in all shapes and sizes, so you can find ones that work for your needs. Some are foldable and compact, making them easy to carry around, while others are sturdier and can hold heavier items.',
     img: 'https://www.harmony-textile.com/c/445-category_default/bag-pouch.jpg',
-    plasticWaste: '0kg'
+    plasticWaste: '0.5kg'
   },
   {
     title: 'Use a refillable water bottle',
