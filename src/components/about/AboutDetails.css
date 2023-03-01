@@ -20,7 +20,7 @@
     text-align:justify;
     overflow: hidden;
 }
-h1 {
+.about-title {
     text-align: center;
     font-size: xx-large;
     padding-top: 3em;
@@ -84,7 +84,7 @@ h1 {
     .about-content{
         width: 70%;   
     }
-    h1 {
+    .about-title {
         padding-top: 2.5em;
     }
 }
@@ -97,7 +97,7 @@ h1 {
     .about-content{
         width: 80%;   
     }
-    h1 {
+    .about-title {
         padding-top: 4em;
     }
 }
@@ -108,7 +108,7 @@ h1 {
         width: 75%;  
         aspect-ratio: 1/1; 
     }
-    h1 {
+    .about-title {
         padding-top: 3em;
     }
     
@@ -122,7 +122,7 @@ h1 {
     .about-content{
         width: 90%;   
     }
-    h1 {
+    .about-title {
         text-align: center;
         font-size: xx-large;
         padding-top: 2em;
