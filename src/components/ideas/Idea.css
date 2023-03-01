@@ -1,0 +1,77 @@
+.idea {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex: 1 1 23em;
+    min-width: 26vw;
+    aspect-ratio: 5/4;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2em;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px var(--color-dark) solid;
+}
+
+.image-wrapper{
+    width: 250%;
+    height: 100%;
+    background-size: cover;
+}
+
+.idea-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0.5em 1em;
+}
+.idea-title{
+    margin: 0.5em 0;
+    text-align: left;
+    font-size: x-large;
+    height: 10%;
+}
+.idea-description{
+ font-size: small;
+ text-align: justify;
+ height: 50%;
+}
+
+.idea-btn{
+    margin: 1em 0;
+    background-color: var(--color-gray);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    padding: 0.5em 0;
+}
+.idea-btn:hover {
+	background:linear-gradient(to bottom, var(--color-green) 5%, var(--color-darkgreen) 100%);
+	background-color: var(--color-greenyellow);
+}
+.idea-btn:active {
+	position:relative;
+	top:1px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .idea {
+        margin: 1em;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .idea {
+        margin: 0.4em;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .idea {
+        aspect-ratio: 3/5;
+    }
+}

@@ -4,28 +4,24 @@
   align-items: center;
   width: 100vw;
   text-align: center;
+  min-height: fit-content;
+  font-family: var(--font-primary);
 }
 
 #content {
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   top: 6em;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 100vw;
+  overflow: hidden;
+  min-height: 80vh;
 }
 
-.welcome{
-  display: flex;
-  justify-content: space-evenly;
-}
-.welcome-img{
-  margin: 20px;
-  height: 150%;
-  width: 150%;
-}
-
-.welcome-intro{
-  margin: 20px;
+@media only screen and (min-width: 1200px) {
+  #content {
+    width: 75vw;
+  }
 }
