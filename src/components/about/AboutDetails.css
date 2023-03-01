@@ -7,11 +7,13 @@
     background-size: cover;
     padding-bottom: 2.5em;
     overflow: hidden;
+    width: 100vw;
+    position: relative;
 }
 
 .about-content{
     --p:1.4em;
-    width: 400px;
+    width: 75%;
     aspect-ratio: 1/1;
     background-color: var(--color-lightgray);
     border-radius: 50%;
@@ -22,6 +24,7 @@
 }
 .about-title {
     text-align: center;
+    margin:0;
     font-size: xx-large;
     padding-top: 3em;
 }
@@ -50,19 +53,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 1em solid var(--color-green);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .about-decoration{
-        width: 45%;  
+        width: 35%;  
         aspect-ratio: 1/1; 
     }
     .about-content{
         width: 80%;   
+    }
+
+    .about-title {
+        font-size: xxx-large;
+        padding-top: 2em;
+        padding-bottom:1em;
     }
 }
 
@@ -89,7 +98,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 870px) {
     .about-decoration{
         width: 65%;  
         aspect-ratio: 1/1; 
