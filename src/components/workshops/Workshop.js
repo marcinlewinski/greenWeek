@@ -16,8 +16,7 @@ const Workshop = ({ img, title, date, place, duration, description, price }) => 
   const setWorkshopContent = () => (
       <div className="workshop-content">
         <h1 className="workshop-title">{title}</h1>
-        <h3 className="workshop-date">{date}</h3>
-        <h3 className="workshop-place">{place}</h3>
+        <h3 className="workshop-date">{date} - {place}</h3>
         <p className="workshop-description">{description}</p>
         <p className="workshop-duration">{duration}</p>
         <p className="workshop-info">{price}</p>
@@ -26,13 +25,13 @@ const Workshop = ({ img, title, date, place, duration, description, price }) => 
 
 
   return (
-    <div className="workshop">
-      <div className="workshop-wrapper">
-        <img className="workshop-img" src={img} alt="{title}" />
+    <div className="workshop" >
+      
+      <div className="workshop-image-wrapper" style={{backgroundImage: `url(${img})`}}>
       </div>
       <div className="text-wrapper">
         {setWorkshopContent()}
-        <button type="submit" className="workshop-btn" onClick={() => setModal({ isOpen: true })}>
+        <button type="submit" className="idea-btn" onClick={() => setModal({ isOpen: true })}>
           REGISTER
         </button>
       </div>

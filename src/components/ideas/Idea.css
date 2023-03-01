@@ -50,6 +50,7 @@
     color: white;
     font-size: 17px;
     padding: 0.5em 0;
+    min-width: 8em;
 }
 
 .idea-btn:hover {
