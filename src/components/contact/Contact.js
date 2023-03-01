@@ -5,27 +5,30 @@ import basicSchema from ".";
 import "./Contact.css";
 
 function Contact({ formpopup, workshopTitle }) {
-  const [formData, setFormData] = useState([
-    { name: "firstName", label: "Name", value: "" },
-    { name: "lastName", label: "Last name", value: "" },
-    { name: "email", label: "Email", value: "" },
-    { name: "subject", label: "Subject", value: "" },
-    { name: "message", label: "message", value: "" },
-  ]);
 
-  const formik = useFormik({
-    initialValues: {
-      firstName: "",
-      lastName: "",
-      email: "",
-      subject: "",
-      message: "",
-    },
-    validationSchema: basicSchema,
-    onSubmit: () => {
-      alert("Your message was sent!");
-    },
-  });
+    const [formData, setFormData] = useState([
+        { name: 'firstName', label: 'Name', value: '' },
+        { name: 'lastName', label: 'Last name', value: '' },
+        { name: 'email', label: 'Email', value: '' },
+        { name: 'subject', label: 'Subject', value: '' },
+        { name: 'message', label: 'message', value: '' },
+    ]);
+
+
+    const formik = useFormik({
+        initialValues: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            subject: formpopup ? workshopTitle : "",
+            message: formpopup ? 'Im interested in this Workshop!' : "",
+        },
+        validationSchema: basicSchema,
+        onSubmit: () => {
+            alert('Your message was sent!');
+        },
+    });
+
   return (
     <div className="Contact">
       <div className="contact-wrapper">

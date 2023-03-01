@@ -3,13 +3,13 @@ import * as yup from "yup";
 const basicSchema = yup.object().shape({
     firstName: yup
         .string()
-        .matches(/^[A-Za-z]+$/, "Please enter letters only")
+        .matches(/^[\p{L} ]+$/u, "Please enter letters only")
         .min(2, "Too Short!")
         .max(50, "Too Long!")
         .required("Please enter a proper name!"),
     lastName: yup
         .string()
-        .matches(/^[A-Za-z]+$/, "Please enter letters only")
+        .matches(/^[\p{L} ]+$/u, "Please enter letters only")
         .min(2, "Too Short!")
         .max(50, "Too Long!")
         .required("Please enter a proper name!"),

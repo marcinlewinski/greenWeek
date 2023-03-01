@@ -1,12 +1,17 @@
+import { useState } from "react";
+
+
 function InputField(props) {
+    
 
     const {onBlure, touched, error,onChange,values, key, type, label,  formpopup, workshopTitle } = props;
-
+   
+   
     const defaultContent = () => {
         if (formpopup && type === 'subject') {
-          return workshopTitle;
+          return  workshopTitle;
         }
-        if (formpopup && type === 'message') {
+        if (formpopup && type === 'message') {  
           return `I'm interested i this Workshop! `;
         }
         return values;
