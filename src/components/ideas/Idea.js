@@ -2,7 +2,7 @@ import "./Idea.css";
 import { useState } from 'react';
 import ModalDiscoverMore from "../modal/ModalDiscoverMore";
 
-const Idea = ({ img, title, description }) => {
+const Idea = ({ img, title, description, plasticWaste }) => {
   const [modal, setModal] = useState(false);
 
   const closeModal = () => {
@@ -18,7 +18,7 @@ const Idea = ({ img, title, description }) => {
         <button className="idea-btn" onClick={() => setModal(true)}>
           Discover more!
         </button>
-        <ModalDiscoverMore open={modal} close={closeModal} />
+        <ModalDiscoverMore open={modal} close={closeModal} data={plasticWaste}/>
       </div>
     </div>
   );

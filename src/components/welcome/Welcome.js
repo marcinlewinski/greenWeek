@@ -1,6 +1,6 @@
 import React from 'react';
 import './Welcome.css'
-const introduction = "Plastic pollution is a global issue that affects the environment, wildlife, and ultimately, human health. We provide practical tips and examples to help you reduce plastic consumption and make sustainable choices. Let's join hands and take small steps towards creating a better future for our planet!";
+const introduction = "Welcome to our platform dedicated to environmental sustainability! We believe that every individual and business has a role to play in protecting our planet, and we're excited to share our ideas and solutions with you. With our innovative approach, we can reduce usage of plastic. But we don't stop there - we want to hear from you too! Share your own ideas and solutions for a more sustainable future. Together, we can make a real difference for our planet and future generations.";
 
 
 function Welcome() {
