@@ -1,7 +1,6 @@
 import React from "react";
 import "react-pure-modal/dist/react-pure-modal.min.css";
 import PureModal from "react-pure-modal";
-import './Modal.css';
 
 function ModalDiscoverMore( props ) {
     return (<>

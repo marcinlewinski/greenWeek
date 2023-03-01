@@ -23,20 +23,19 @@
   transform: translateX(-200vw);
 }
 
+
 .next{
   position: absolute;
   top: 42%;
   right: 10%;
   height: 9vmin;
-  padding: 0 0.5em 0 1em;
   margin-top: 0.1em;
   z-index: 1;
   display: flex;
-  transform: rotate(180deg)
-}
-
-.next{
-  right: 10%;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  box-shadow: inset -80px 7px 1px -30px white;
+  cursor: pointer;
 }
 
 .previous{
@@ -44,13 +43,13 @@
   top: 42%;
   left: 10%;
   height: 9vmin;
-  padding: 0 0.5em 0 1em;
   margin-top: 0.1em;
   z-index: 1;
   display: flex;
+  border-radius: 50%;
+  box-shadow: inset -80px 7px 1px -30px white;
+  cursor: pointer;
 }
-
-
 
 @media (max-width: 1100px) {
 .next{
