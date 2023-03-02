@@ -25,11 +25,10 @@ Mentors: Katarzyna Mrawczyńska, Adrian Widlak
 
 ## To do
 
-Project is created with:
-
-- Lorem version: 12.3
-- Ipsum version: 2.33
-- Ament library version: 999
+- Explore ideas and discover ways to reduce plastic waste
+- Connect with other organizations and individuals who share our passion for sustainability
+- Sign up for workshops to learn more about reducing plastic waste
+- Share your feedback and new ideas for reducing plastic waste
 
 ## Features
 
