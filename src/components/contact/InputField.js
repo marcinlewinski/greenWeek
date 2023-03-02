@@ -17,7 +17,7 @@ function InputField(props) {
       return workshopTitle;
     }
     if (formpopup && type === 'message') {
-      return `I'm interested i this Workshop! `;
+      return `I'm interested in this Workshop! `;
     }
     return values;
   };

@@ -1,6 +1,6 @@
 const dataWorkshops = [
   {
-    img: 'https://www.childandfamily.foundation/sites/default/files/styles/banner_4_1/public/article/banner/DSCN1041.JPG?h=c67361d1&itok=vnupCOyt',
+    img: 'DSCN1041.jfif',
     title: 'Plastic Recycling Workshop',
     date: '15 April 2023',
     place: 'online',
@@ -11,7 +11,7 @@ const dataWorkshops = [
     price: 'Cost - 100 PLN per student',
   },
   {
-    img: 'https://media.cnn.com/api/v1/images/stellar/prod/220729124818-composting-benefits-stock.jpg?c=16x9&q=h_720,w_1280,c_fill',
+    img: '220729124818-composting-benefits-stock.jpg',
     title: 'Discovering the Wonders of Composting',
     date: '22 April 2023',
     place: 'Warsaw',
@@ -22,7 +22,7 @@ const dataWorkshops = [
     price: 'Cost - 100 PLN per student',
   },
   {
-    img: 'https://www.biologie.uni-wuerzburg.de/fileadmin/_processed_/0/1/csm_1507-biocenter-img-5_8109c3d260.jpg',
+    img: 'csm_1507-biocenter-img-5_8109c3d260.jpg',
     title: 'Sustainability in Action',
     date: '22 April 2023',
     place: 'Cracow',
