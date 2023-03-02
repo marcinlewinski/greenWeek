@@ -1,6 +1,6 @@
 # GREEN WEEK
 ## Project aim
-    Our primary objective in creating this application was to promote environmental sustainability and share our ideas on how to reduce plastic usage in our daily life. Our goal was to develop an application that provides variety of interactive features that would engage users and encourage them to explore the app further. To achieve this, we focused on developing a user-friendly design that is well-balanced in terms of functionality and aesthetics. Overall, our aim was to create an application that not only delivers valuable content but also provides them with a pleasant and memorable experience.
+Our primary objective in creating this application was to promote environmental sustainability and share our ideas on how to reduce plastic usage in our daily life. Our goal was to develop an application that provides variety of interactive features that would engage users and encourage them to explore the app further. To achieve this, we focused on developing a user-friendly design that is well-balanced in terms of functionality and aesthetics. Overall, our aim was to create an application that not only delivers valuable content but also provides them with a pleasant and memorable experience.
 
 ## Table of contents
 * [Team](#team)
