@@ -1,20 +1,21 @@
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 import PureModal from 'react-pure-modal';
 
-const SubmissionMessage = ({ submitted, setSubmitted }) => {
-  return (
+const SubmissionMessage = ({ submitted, setSubmitted, modal }) => {
+  return modal ? (
     <PureModal
       header="Registration Completed Successfully"
       isOpen={submitted}
       closeButton="X"
       closeButtonPosition="header"
       onClose={() => {
-        setSubmitted(false);
         return true;
       }}
     >
       <p>THANK YOU!</p>
     </PureModal>
+  ) : (
+    <p>THANK YOU!</p>
   );
 };
 
