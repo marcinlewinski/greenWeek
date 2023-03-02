@@ -1,7 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import Form from '../../components/contact/Form';
-// import SubmissionMessage from '../contact/SubmissionMessage';
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 
@@ -9,7 +7,7 @@ const FormPopup = ({ modal, setModal, handleSubmit, workshopTitle }) => {
   return (
     <>
       <PureModal
-        header="REGISTRATION FORM "
+        header="REGISTRATION FORM"
         isOpen={modal}
         closeButton="X"
         closeButtonPosition="header"
