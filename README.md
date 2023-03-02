@@ -72,3 +72,7 @@ $ npm start
 * [https://tyonote.com/wp-content/uploads/2021/02/a_group-1024x682.jpg](https://tyonote.com/wp-content/uploads/2021/02/a_group-1024x682.jpg)
 * [https://study.com/cimages/course-image/plants-ecology-lesson-plans_522149_large.jpeg](https://study.com/cimages/course-image/plants-ecology-lesson-plans_522149_large.jpeg)
 * [https://www.projecttimes.com/wp-content/themes/yootheme/cache/a0c2a640e1085a57e07c368bfe5151f0-f071cec3.jpeg](https://www.projecttimes.com/wp-content/themes/yootheme/cache/a0c2a640e1085a57e07c368bfe5151f0-f071cec3.jpeg)
+* [https://www.freepik.com/?_gl=1*1hh0e19*test_ga*MTEzOTA1ODI1Mi4xNjc1MzcxNTY3*test_ga_523JXC6VL7*MTY3Nzc2MTkwOC4xMS4xLjE2Nzc3NjE5NjEuNy4wLjA.*fp_ga*MTEzOTA1ODI1Mi4xNjc1MzcxNTY3*fp_ga_1ZY8468CQB*MTY3Nzc2MTkwOC4xMS4xLjE2Nzc3NjE5NjEuNy4wLjA.](https://www.freepik.com/?_gl=1*1hh0e19*test_ga*MTEzOTA1ODI1Mi4xNjc1MzcxNTY3*test_ga_523JXC6VL7*MTY3Nzc2MTkwOC4xMS4xLjE2Nzc3NjE5NjEuNy4wLjA.*fp_ga*MTEzOTA1ODI1Mi4xNjc1MzcxNTY3*fp_ga_1ZY8468CQB*MTY3Nzc2MTkwOC4xMS4xLjE2Nzc3NjE5NjEuNy4wLjA.)
+* [https://www.flaticon.com/authors/tulpahn](https://www.flaticon.com/authors/tulpahn)
+* [https://www.flaticon.com/authors/ilham-fitrotul-hayat](https://www.flaticon.com/authors/ilham-fitrotul-hayat)
+* [https://www.flaticon.com/authors/pixel-perfect](https://www.flaticon.com/authors/pixel-perfect)
