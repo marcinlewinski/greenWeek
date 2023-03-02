@@ -9,14 +9,17 @@ const SubmissionMessage = ({ submitted, setSubmitted, modal }) => {
       closeButton="X"
       closeButtonPosition="header"
       onClose={() => {
+        setSubmitted(false); //CZYŚCI FORMULARZ ALE ZNIKA POP-UP
         return true;
       }}
     >
-      <p>Thank you for your interest in our workshop, we will respond shortly!</p>
+      <p style={{ 'word-break': 'normal' }}>Thank you for your message, we will respond shortly!</p>
     </PureModal>
   ) : (
     <>
-      <p>Thank you for your interest in our workshop, we will respond shortly!</p>
+      <p style={{ 'word-break': 'normal' }}>
+        Thank you for your interest in our workshop, we will respond shortly!
+      </p>
     </>
   );
 };
