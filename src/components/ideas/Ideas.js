@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Ideas.css'
+import './Ideas.css';
 import Idea from './Idea';
 import data from '../../database/data';
 
@@ -21,14 +21,10 @@ const Ideas = () => {
     setSearch(dataFiltered);
   };
 
-  const handleModal = () => {
-    console.log(`Testowa funkcja dla Modal Window`);
-  };
-
   return (
     <div className="ideas">
       <div className="ideas-search">
-        <img className="loupe" src='./loupe.png'></img>
+        <img className="loupe" src="./loupe.png"></img>
         <input
           className="ideas-input"
           type="text"
@@ -36,12 +32,11 @@ const Ideas = () => {
           onChange={getFilteredIdeas}
         />
       </div>
-      <div className='ideas-container'>
+      <div className="ideas-container">
         {search.map((item, index) => (
-        <Idea key={index} {...item} handleModal={handleModal} />
+          <Idea key={index} {...item} />
         ))}
       </div>
-      
     </div>
   );
 };
