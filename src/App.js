@@ -19,25 +19,23 @@ function App() {
   const [content, setContent] = useState(findContent());
   
   useEffect(()=>{
+    sessionStorage.setItem("currentContent", menuChoices.find(choice => choice.active).text);
     const choice = menuChoices.find((choice) => choice.element === content);
     const newChoices = [...menuChoices];
     newChoices.forEach((choice) => (choice.active = false));
     choice.active = true;
     setMenuChoices(newChoices);
-  }, [content]);
+  });
 
   function findContent() {
     const text = sessionStorage.getItem("currentContent");
-    const choice = text === null
-     ? (menuChoices.find((choice) => choice.active))
-     : (menuChoices.find((choice) => choice.text === text));
-    return choice.element;
+    return text === null
+     ? (menuChoices.find((choice) => choice.active).element)
+     : (menuChoices.find((choice) => choice.text === text).element);
   }
 
   function changePage(text) {
-    const choice = menuChoices.find((choice) => choice.text === text);
-    setContent(choice.element);
-    sessionStorage.setItem("currentContent", menuChoices.find(choice => choice.active).text);
+    setContent(menuChoices.find((choice) => choice.text === text).element);
   }
 
   return (
