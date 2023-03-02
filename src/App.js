@@ -6,58 +6,43 @@ import Welcome from "./components/welcome/Welcome";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [menuChoices, setMenuChoices] = useState([
-    {
-      element: <Welcome onSolutionClick={() => setIdeasTabActive()} />,
-      text: "WELCOME",
-      active: true,
-    },
+    { element: <Welcome onSolutionClick={() => changePage('IDEAS')} />, text: "WELCOME", active: true},
     { element: <Ideas />, text: "IDEAS", active: false },
     { element: <Workshops />, text: "WORKSHOPS", active: false },
     { element: <About />, text: "ABOUT US", active: false },
     { element: <Contact />, text: "CONTACT", active: false },
   ]);
   const [content, setContent] = useState(findContent());
+  
+  useEffect(()=>{
+    const choice = menuChoices.find((choice) => choice.element === content);
+    const newChoices = [...menuChoices];
+    newChoices.forEach((choice) => (choice.active = false));
+    choice.active = true;
+    setMenuChoices(newChoices);
+  }, [content]);
 
   function findContent() {
     const text = sessionStorage.getItem("currentContent");
-    return text === null ? (
-      <Welcome onSolutionClick={() => setIdeasTabActive()} />
-    ) : (
-      menuChoices.find((choice) => choice.text === text).element
-    );
+    const choice = text === null
+     ? (menuChoices.find((choice) => choice.active))
+     : (menuChoices.find((choice) => choice.text === text));
+    return choice.element;
   }
 
-  function setIdeasTabActive() {
-    setContent(<Ideas />);
-    setMenuChoices((menuChoices) => {
-      return menuChoices.map((choice) => {
-        if (choice.text === "IDEAS") {
-          return { ...choice, active: true };
-        }
-        return { ...choice, active: false };
-      });
-    });
-  }
-
-  function changePage(event) {
-    const newChoices = [...menuChoices];
-    newChoices.forEach((choice) => (choice.active = false));
-    const choice = newChoices.find(
-      (choice) => choice.text === event.target.textContent
-    );
-    choice.active = true;
+  function changePage(text) {
+    const choice = menuChoices.find((choice) => choice.text === text);
     setContent(choice.element);
-    setMenuChoices(newChoices);
     sessionStorage.setItem("currentContent", menuChoices.find(choice => choice.active).text);
   }
 
   return (
     <div className="App">
-      <Header menuChoices={menuChoices} changePage={(e) => changePage(e)} />
+      <Header menuChoices={menuChoices} changePage={(e) => changePage(e.target.textContent)} />
       <div id="content">{content}</div>
     </div>
   );
