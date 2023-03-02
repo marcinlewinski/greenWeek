@@ -1,36 +1,38 @@
-import InputField from "./InputField";
-import { useFormik } from "formik";
-import { useState } from "react";
-import basicSchema from ".";
-import "./Contact.css";
+import InputField from './InputField';
+import SubmissionMessage from './SubmissionMessage';
+import { useFormik } from 'formik';
+import { useState } from 'react';
+import basicSchema from '.';
+import './Contact.css';
 
 function Contact({ formpopup, workshopTitle }) {
+  const [submitted, setSubmitted] = useState(false);
 
-    const [formData, setFormData] = useState([
-        { name: 'firstName', label: 'Name', value: '' },
-        { name: 'lastName', label: 'Last name', value: '' },
-        { name: 'email', label: 'Email', value: '' },
-        { name: 'subject', label: 'Subject', value: '' },
-        { name: 'message', label: 'message', value: '' },
-    ]);
+  const [formData, setFormData] = useState([
+    { name: 'firstName', label: 'Name', value: '' },
+    { name: 'lastName', label: 'Last name', value: '' },
+    { name: 'email', label: 'Email', value: '' },
+    { name: 'subject', label: 'Subject', value: '' },
+    { name: 'message', label: 'message', value: '' },
+  ]);
 
-
-    const formik = useFormik({
-        initialValues: {
-            firstName: '',
-            lastName: '',
-            email: '',
-            subject: formpopup ? workshopTitle : "",
-            message: formpopup ? 'Im interested in this Workshop!' : "",
-        },
-        validationSchema: basicSchema,
-        onSubmit: () => {
-            alert('Your message was sent!');
-        },
-    });
+  const formik = useFormik({
+    initialValues: {
+      firstName: '',
+      lastName: '',
+      email: '',
+      subject: formpopup ? workshopTitle : '',
+      message: formpopup ? 'Im interested in this Workshop!' : '',
+    },
+    validationSchema: basicSchema,
+    onSubmit: () => {
+      setSubmitted(true);
+    },
+  });
 
   return (
-    
+    <>
+      {!submitted && (
         <form className="contact-form" onSubmit={formik.handleSubmit} autoComplete="off">
           <div className="input-wrapper">
             {formData &&
@@ -49,16 +51,32 @@ function Contact({ formpopup, workshopTitle }) {
                   workshopTitle={workshopTitle}
                 ></InputField>
               ))}
-              <div className="contact-label" id="contact-from">From:</div>
-              <div className="contact-label" id="contact-send">Send:</div>
+            <div className="contact-label" id="contact-from">
+              From:
+            </div>
+            <div className="contact-label" id="contact-send">
+              Send:
+            </div>
           </div>
-          
+          {/* onClick={() => setSubmitted(true)} */}
           <div>
-            <button className="idea-btn" onClick={formik.handleSubmit} type="submit">
+            <button
+              className="idea-btn"
+              type="submit"
+              // onClick={() => {
+              //   setSubmitted(true);
+              //   setForm(false);
+              // }}
+            >
               Submit
             </button>
           </div>
         </form>
+      )}
+      {submitted && (
+        <SubmissionMessage submitted={submitted} setSubmitted={setSubmitted} modal={!formpopup} />
+      )}
+    </>
   );
 }
 

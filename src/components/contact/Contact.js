@@ -1,9 +1,8 @@
-import Form from './Form.js'
-import "./Contact.css";
+import Form from './Form.js';
+import './Contact.css';
 
 function Contact() {
-
-return (
+  return (
     <div className="Contact">
       <div className="contact-wrapper">
         <div className="contact-info">
