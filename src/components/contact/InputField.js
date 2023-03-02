@@ -1,3 +1,4 @@
+import { useState } from "react";
 function InputField(props) {
   const {
     onBlur,
@@ -11,8 +12,10 @@ function InputField(props) {
     formpopup,
     workshopTitle,
   } = props;
+  const [message, setMessage] = useState((formpopup && type === 'message') ? `I'm interested in this Workshop! ` : values);
+  const [subject, setSubject] = useState((formpopup && type === 'subject') ? workshopTitle : values);
 
-  const defaultContent = () => {
+  function defaultContent() {
     if (formpopup && type === 'subject') {
       return workshopTitle;
     }
@@ -22,13 +25,23 @@ function InputField(props) {
     return values;
   };
 
+  const handleMessageChange = event => {
+    setMessage(event.target.value);
+    onChange(event);
+  };
+
+  const handleSubjectChange = event => {
+    setSubject(event.target.value);
+    onChange(event);
+  };
+
   return (
     <div className="contact-input-wrapper" id={type + '-contact'}>
       {type === 'message' ? (
         <textarea
           onBlur={onBlur}
-          onChange={onChange}
-          value={defaultContent()}
+          onChange={handleMessageChange}
+          value={message}
           id={type}
           key={index}
           type={type}
@@ -37,8 +50,8 @@ function InputField(props) {
       ) : (
         <input
           onBlur={onBlur}
-          onChange={onChange}
-          value={defaultContent()}
+          onChange={handleSubjectChange}
+          value={subject}
           id={type}
           key={index}
           type={type}
