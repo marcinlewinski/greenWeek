@@ -60,7 +60,6 @@ const data = [
     description: 'Finally, consider composting food scraps instead of using plastic bags for disposal. Composting not only reduces the amount of waste sent to landfills, but it can also provide nutrient-rich soil for your garden. You can compost a variety of food scraps, including fruit and vegetable scraps, eggshells, and coffee grounds. Just be sure to do some research on the best practices for composting in your area.',
     img:'composting-food-pexels-eva-bronzini-5503338.jpg',
     plasticWaste: '4.1kg'
-
   },
 ];
 
