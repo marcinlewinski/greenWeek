@@ -3,9 +3,9 @@
 
 ## Table of contents
 * [Team](#team)
-* [To do](#to_do)
+* [To do](#toDo)
 * [Features](#features)
-* [Project status](#project_status)
+* [Project status](#projectStatus)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Sources](#sources)
