@@ -7,7 +7,8 @@ return (
     <div className="Contact">
       <div className="contact-wrapper">
         <div className="contact-info">
-          <p>If you have any idea that you would like to add, please share with us.</p>
+          <h1>Contact form</h1>
+          <p>If you have some idea or feedback that you would like to share, let us know!</p>
         </div>
         <Form></Form>
       </div>

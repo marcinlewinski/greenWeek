@@ -2,10 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height:calc(100vh - 6em);
     width:100%;
     background-size: cover;
-    padding-bottom: 2.5em;
     overflow: hidden;
     width: 100vw;
     position: relative;
@@ -21,6 +20,7 @@
     font-size:smaller;
     text-align:justify;
     overflow: hidden;
+    text-indent: 1em;
 }
 .about-title {
     text-align: center;
@@ -71,7 +71,7 @@
 
     .about-title {
         font-size: xxx-large;
-        padding-top: 1.5em;
+        padding-top: 2em;
         padding-bottom:0.5em;
     }
 }
@@ -199,11 +199,13 @@
     .about-title {
         text-align: center;
         font-size: medium;
+        font-size: small;
+        font-weight: 800;
         padding-top: 2em;
     }
 
-    p.about-content {
-        font-size: smaller;
+    .about-content {
+        font-size: 4vmin;
     }
 }
 

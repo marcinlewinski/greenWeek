@@ -10,8 +10,9 @@
     border-radius: 7px;
     overflow: hidden;
     cursor: pointer;
-    border: 2px var(--color-dark) solid;
+    border-bottom: 2px var(--color-dark) solid;
     margin: 0.7em;
+    background-color: var(--color-lightgray);
 }
 
 .image-wrapper{
@@ -39,11 +40,12 @@
  font-size: small;
  text-align: justify;
  height: 50%;
+ text-indent: 1em;
 }
 
 .idea-btn{
     margin: 1em 0;
-    background-color: var(--color-gray);
+    background-color: var(--color-darkgreen);
     border-radius: 10px;
     border: none;
     cursor: pointer;
