@@ -32,7 +32,8 @@ Mentors: Katarzyna Mrawczyńska, Adrian Widlak
 
 ## Features
 
-To run this project, install it locally using npm:
+![](responsive.gif)
+
 
 ## Project status
 
