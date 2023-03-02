@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: calc(100vh - 6em);
   background-size: cover;
 }
 .welcome-img {
@@ -18,8 +18,9 @@
   height: 80%;
   width: 80%;
   background-color: white;
-  opacity: 75%;
+  opacity: 85%;
   border-radius: 25px;
+  min-height: 300px;
 }
 
 .welcome-intro {
@@ -30,6 +31,7 @@
   font-size: large;
   text-align: justify;
   padding: 0em 5em;
+  text-indent: 1em;
 }
 
 .marked-text {

@@ -10,7 +10,7 @@ function AboutDetail({ img, title, description }) {
             <div className="about-content">
               <i></i>
               <h1 className="about-title">{title}</h1>
-              {description}
+              <p>{description}</p>
             </div>
           </div>
         </div>

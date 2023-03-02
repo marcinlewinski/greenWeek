@@ -7,7 +7,7 @@ function ModalDiscoverMore( props ) {
         <PureModal className="ModalDiscoverMore"
             shouldCloseOnEsc = {true}
             isOpen={props.open}
-            header="Congrats!"
+            header="Try this!"
             footer={props.data}
             onClose={props.close}
         >
