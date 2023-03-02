@@ -31,7 +31,11 @@ Mentors: Katarzyna Mrawczyńska, Adrian Widlak
 - Share your feedback and new ideas for reducing plastic waste
 
 ## Features
-
+### Form validation
+![](form.gif)
+### Pop-ups
+![](popups.gif)
+### Responsiveness
 ![](responsive.gif)
 
 
