@@ -9,7 +9,6 @@ const FormPopup = ({ modal, setModal, handleSubmit, workshopTitle }) => {
       <PureModal
         header="REGISTRATION FORM"
         isOpen={modal}
-        closeButton="X"
         closeButtonPosition="header"
         onClose={() => {
           setModal(false);
