@@ -3,7 +3,7 @@ const aboutUs = [
     title: 'Who we are',
     description:
       'We are a group of passionate individuals who are dedicated to preserving the environment. Our team consists of scientists, activists, and educators who are committed to raising awareness about the importance of sustainability. We believe that by working together, we can make a positive impact on the planet.',
-    img: 'https://images.pexels.com/photos/1510150/pexels-photo-1510150.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      img: 'https://tyonote.com/wp-content/uploads/2021/02/a_group-1024x682.jpg',
   },
   {
     title: 'What we do',

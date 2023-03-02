@@ -17,22 +17,19 @@
     background-position: center;
 }
 
-.workshop-content {
-
-}
-.workshop-title {
-
-}
-.workshop-date {
-
-}
 .workshop-description {
     text-align: justify;
     padding: 1em;
+    margin: 0;
 }
-.workshop-duration {
-
+.workshop-date {
+    margin: 0;
 }
-.workshop-info {
-
+.workshop-title {
+    margin: 0;
+    padding: 1em 0 0.2em 0;
+}
+.workshop-duration, .workshop-info{
+    margin:0;
+    padding-bottom: 0.3em;
 }

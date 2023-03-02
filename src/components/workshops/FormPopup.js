@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from '../../components/contact/Contact';
+import Form from '../../components/contact/Form';
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 
@@ -14,7 +14,7 @@ const FormPopup = ({ modal, setModal, handleSubmit, workshopTitle }) => (
       return true;
     }}
   >
-    <Contact handleSubmit={handleSubmit} formpopup={true} workshopTitle={workshopTitle} />
+    <Form handleSubmit={handleSubmit} formpopup={true} workshopTitle={workshopTitle} />
   </PureModal>
 );
 

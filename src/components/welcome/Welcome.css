@@ -32,6 +32,12 @@
   padding: 0em 5em;
 }
 
+.marked-text {
+  font-weight: bold;
+  color: green;
+  cursor:pointer;
+}
+
 @media only screen and (min-width: 1000px) {
   .welcome-text {
     padding: 0em 8em;

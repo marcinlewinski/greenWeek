@@ -7,11 +7,11 @@ function ModalDiscoverMore( props ) {
         <PureModal className="ModalDiscoverMore"
             shouldCloseOnEsc = {true}
             isOpen={props.open}
-            header="Congrats"
+            header="Congrats!"
             footer={props.data}
             onClose={props.close}
         >
-            <p>Thanks to this solution we use less plastic up to</p>
+            <p style={{'word-break': 'normal'}}>Thanks to this solution in one month we use less plastic up to</p>
         </PureModal>
     </>)
 }
