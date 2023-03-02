@@ -4,7 +4,7 @@ import PureModal from 'react-pure-modal';
 const SubmissionMessage = ({ submitted, setSubmitted, modal }) => {
   return modal ? (
     <PureModal
-      header="Registration Completed Successfully"
+      header="THANK YOU!"
       isOpen={submitted}
       closeButton="X"
       closeButtonPosition="header"
@@ -12,10 +12,12 @@ const SubmissionMessage = ({ submitted, setSubmitted, modal }) => {
         return true;
       }}
     >
-      <p>THANK YOU!</p>
+      <p>Thank you for your interest in our workshop, we will respond shortly!</p>
     </PureModal>
   ) : (
-    <p>THANK YOU!</p>
+    <>
+      <p>Thank you for your interest in our workshop, we will respond shortly!</p>
+    </>
   );
 };
 
