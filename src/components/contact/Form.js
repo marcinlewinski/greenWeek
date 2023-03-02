@@ -9,11 +9,11 @@ function Contact({ formpopup, workshopTitle }) {
   const [submitted, setSubmitted] = useState(false);
 
   const [formData, setFormData] = useState([
-    { name: 'firstName', label: 'Name', value: '' },
-    { name: 'lastName', label: 'Last name', value: '' },
-    { name: 'email', label: 'Email', value: '' },
-    { name: 'subject', label: 'Subject', value: '' },
-    { name: 'message', label: 'message', value: '' },
+    { name: 'firstName', label: 'Name'},
+    { name: 'lastName', label: 'Last name' },
+    { name: 'email', label: 'Email'},
+    { name: 'subject', label: 'Subject',},
+    { name: 'message', label: 'Message',},
   ]);
 
   const formik = useFormik({
@@ -22,7 +22,7 @@ function Contact({ formpopup, workshopTitle }) {
       lastName: '',
       email: '',
       subject: formpopup ? workshopTitle : '',
-      message: formpopup ? 'Im interested in this Workshop!' : '',
+      message: formpopup ? 'Im interested in this Workshop!'  : '',
     },
     validationSchema: basicSchema,
     onSubmit: () => {
@@ -38,7 +38,7 @@ function Contact({ formpopup, workshopTitle }) {
             {formData &&
               formData.map((data, index) => (
                 <InputField
-                  onBlure={formik.handleBlur}
+                  onBlur={formik.handleBlur}
                   touched={formik.touched[data.name]}
                   error={formik.errors}
                   onChange={formik.handleChange}
@@ -58,16 +58,8 @@ function Contact({ formpopup, workshopTitle }) {
               Send:
             </div>
           </div>
-          {/* onClick={() => setSubmitted(true)} */}
           <div>
-            <button
-              className="idea-btn"
-              type="submit"
-              // onClick={() => {
-              //   setSubmitted(true);
-              //   setForm(false);
-              // }}
-            >
+            <button className="idea-btn" type="submit">
               Submit
             </button>
           </div>

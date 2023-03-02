@@ -1,6 +1,6 @@
 function InputField(props) {
   const {
-    onBlure,
+    onBlur,
     touched,
     error,
     onChange,
@@ -22,40 +22,31 @@ function InputField(props) {
     return values;
   };
 
-  if (type === 'message') {
-    return (
-      <>
-        <div className="contact-input-wrapper" id={type + '-contact'}>
-          <textarea
-            onBlur={onBlure}
-            onChange={onChange}
-            value={defaultContent()}
-            id={type}
-            key={index}
-            type={type}
-            placeholder={label}
-          ></textarea>
-          {error[type] && touched && <p className="error">{error[type]}</p>}
-        </div>
-      </>
-    );
-  }
-
   return (
-    <>
-      <div className="contact-input-wrapper" id={type + '-contact'}>
-        <input
-          onBlur={onBlure}
+    <div className="contact-input-wrapper" id={type + '-contact'}>
+      {type === 'message' ? (
+        <textarea
+          onBlur={onBlur}
           onChange={onChange}
           value={defaultContent()}
           id={type}
           key={index}
           type={type}
           placeholder={label}
-        ></input>
-        {error[type] && touched && <p className="error">{error[type]}</p>}
-      </div>
-    </>
+        />
+      ) : (
+        <input
+          onBlur={onBlur}
+          onChange={onChange}
+          value={defaultContent()}
+          id={type}
+          key={index}
+          type={type}
+          placeholder={label}
+        />
+      )}
+      {error[type] && touched && <p className="error">{error[type]}</p>}
+    </div>
   );
 }
 

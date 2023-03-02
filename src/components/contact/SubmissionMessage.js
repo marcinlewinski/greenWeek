@@ -1,15 +1,13 @@
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 import PureModal from 'react-pure-modal';
 
-const SubmissionMessage = ({ submitted, setSubmitted, modal }) => {
+const SubmissionMessage = ({ submitted, modal }) => {
   return modal ? (
     <PureModal
-      header="THANK YOU!"
+      header=" THANK YOU!"
       isOpen={submitted}
-      closeButton="X"
       closeButtonPosition="header"
       onClose={() => {
-        setSubmitted(false); //CZYŚCI FORMULARZ ALE ZNIKA POP-UP
         return true;
       }}
     >
