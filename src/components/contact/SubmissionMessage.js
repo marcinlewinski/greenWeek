@@ -12,7 +12,7 @@ const SubmissionMessage = ({ submitted, setSubmitted, modal }) => {
         return true;
       }}
     >
-      <p>Thank you for tour message, we will respond shortly!</p>
+      <p>Thank you for your message, we will respond shortly!</p>
     </PureModal>
   ) : (
     <p>Thank you for your interest in our workshop, we will respond shortly!</p>
