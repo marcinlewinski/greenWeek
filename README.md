@@ -14,7 +14,7 @@ Our primary objective for developing this application was to raise awareness abo
 ## Team
 Mentors: Katarzyna Mrawczyńska, Adrian Widlak
 
-* [MaGdalena Huget](https://github.com/magdalenahuget)
+* [Magdalena Huget](https://github.com/magdalenahuget)
 * [Wiktoria Kulczyńska](https://github.com/wiktoria75)
 * [Marcin Lewiński](https://github.com/marcinlewinski)
 * [Patrycja Markiewicz](https://github.com/patrycjavmarkiewicz)
