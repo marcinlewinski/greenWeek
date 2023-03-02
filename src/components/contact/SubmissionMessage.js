@@ -4,7 +4,7 @@ import PureModal from 'react-pure-modal';
 const SubmissionMessage = ({ submitted, modal }) => {
   return modal ? (
     <PureModal
-      header="THANK YOU!"
+      header=" THANK YOU!"
       isOpen={submitted}
       closeButtonPosition="header"
       onClose={() => {

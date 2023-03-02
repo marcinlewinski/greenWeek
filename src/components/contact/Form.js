@@ -58,16 +58,8 @@ function Contact({ formpopup, workshopTitle }) {
               Send:
             </div>
           </div>
-          {/* onClick={() => setSubmitted(true)} */}
           <div>
-            <button
-              className="idea-btn"
-              type="submit"
-              // onClick={() => {
-              //   setSubmitted(true);
-              //   setForm(false);
-              // }}
-            >
+            <button className="idea-btn" type="submit">
               Submit
             </button>
           </div>
