@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header menuChoices={menuChoices} changePage={(e) => changePage(e.target.textContent)} />
+      <Header menuChoices={menuChoices} onLogoClick={() => changePage('WELCOME')} changePage={(e) => changePage(e.target.textContent)} />
       <div id="content">{content}</div>
     </div>
   );

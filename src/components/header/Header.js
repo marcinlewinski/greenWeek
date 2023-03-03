@@ -1,10 +1,10 @@
 import './Header.css';
 import MenuChoice from "./MenuChoice.js";
 
-function Header({ menuChoices, changePage }) {
+function Header({ menuChoices, changePage, onLogoClick }) {
   return (
     <div id="header">
-      <div id="logo-and-name-wrapper">
+      <div id="logo-and-name-wrapper" onClick={onLogoClick}>
         <div id="logo-wrapper">
           <img id="logo" src="/ecological.png" alt="logo"></img>
         </div>
