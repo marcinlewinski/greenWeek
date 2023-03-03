@@ -22,7 +22,7 @@ function App() {
     const choice = menuChoices.find((choice) => choice.element === content);
     const newChoices = [...menuChoices];
     newChoices.forEach((choice) => (choice.active = false));
-    choice.active = true;
+    newChoices.find((choice) => choice.element === content).active = true;
     setMenuChoices(newChoices);
     sessionStorage.setItem("currentContent", menuChoices.find(choice => choice.active).text);
   }, [content]);
