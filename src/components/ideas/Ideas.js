@@ -4,21 +4,20 @@ import Idea from './Idea';
 import data from '../../database/data';
 
 const Ideas = () => {
-  const [search, setSearch] = useState(data);
+  const [data, setData] = useState(data);
 
   const getIdeasFilteredByTitle = (word) => {
-    return search.filter((item) => item.title.toLowerCase().includes(word));
+    return data.filter((item) => item.title.toLowerCase().includes(word));
   };
 
   const getFilteredIdeas = (e) => {
     const inputSearch = e.target.value.toLowerCase();
-
     if (!inputSearch) {
-      setSearch(data);
+      setData(data);
       return;
     }
     const dataFiltered = getIdeasFilteredByTitle(inputSearch);
-    setSearch(dataFiltered);
+    setData(dataFiltered);
   };
 
   return (
@@ -33,7 +32,7 @@ const Ideas = () => {
         />
       </div>
       <div className="ideas-container">
-        {search.map((item, index) => (
+        {data.map((item, index) => (
           <Idea key={index} {...item} />
         ))}
       </div>

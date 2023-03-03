@@ -29,9 +29,7 @@ function App() {
 
   function findContent() {
     const text = sessionStorage.getItem("currentContent");
-    return text === null
-     ? (menuChoices.find((choice) => choice.active).element)
-     : (menuChoices.find((choice) => choice.text === text).element);
+    return menuChoices.find((choice) => (text === null) ? choice.active : choice.text === text).element;
   }
 
   function changePage(text) {
