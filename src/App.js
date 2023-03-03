@@ -18,19 +18,18 @@ function App() {
   ]);
   const [content, setContent] = useState(findContent());
   
-  useEffect(() => {
-    sessionStorage.setItem("currentContent", menuChoices.find(choice => choice.active).text);
+  useEffect(()=> {
+    const choice = menuChoices.find((choice) => choice.element === content);
     const newChoices = [...menuChoices];
     newChoices.forEach((choice) => (choice.active = false));
     newChoices.find((choice) => choice.element === content).active = true;
     setMenuChoices(newChoices);
-  });
+    sessionStorage.setItem("currentContent", menuChoices.find(choice => choice.active).text);
+  }, [content]);
 
   function findContent() {
     const text = sessionStorage.getItem("currentContent");
-    return text === null
-     ? (menuChoices.find((choice) => choice.active).element)
-     : (menuChoices.find((choice) => choice.text === text).element);
+    return menuChoices.find((choice) => (text === null) ? choice.active : choice.text === text).element;
   }
 
   function changePage(text) {
@@ -39,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header menuChoices={menuChoices} changePage={(e) => changePage(e.target.textContent)} />
+      <Header menuChoices={menuChoices} onLogoClick={() => changePage('WELCOME')} changePage={(e) => changePage(e.target.textContent)} />
       <div id="content">{content}</div>
     </div>
   );

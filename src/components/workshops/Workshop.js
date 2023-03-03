@@ -5,10 +5,6 @@ import './Workshop.css';
 const Workshop = ({ img, title, date, place, duration, description, price }) => {
   const [modal, setModal] = useState(false);
 
-  const handleSubmit = () => {
-    setModal(false);
-  };
-
   const setWorkshopContent = () => (
     <div className="workshop-content">
       <h1 className="workshop-title">{title}</h1>
@@ -33,7 +29,7 @@ const Workshop = ({ img, title, date, place, duration, description, price }) => 
       <FormPopup
         modal={modal}
         setModal={setModal}
-        handleSubmit={handleSubmit}
+        handleSubmit={() => setModal(false)}
         workshopTitle={`${title}-${date}-${place}`}
       />
     </div>

@@ -2,7 +2,7 @@ import InputField from './InputField';
 import SubmissionMessage from './SubmissionMessage';
 import { useFormik } from 'formik';
 import { useState } from 'react';
-import basicSchema from '.';
+import basicSchema from './validation';
 import './Contact.css';
 
 function Contact({ formpopup, workshopTitle }) {
