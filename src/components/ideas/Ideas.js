@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './Ideas.css';
 import Idea from './Idea';
-import data from '../../database/data';
+import dataFile from '../../database/data';
 
 const Ideas = () => {
-  const [data, setData] = useState(data);
+  const [data, setData] = useState(dataFile);
 
   const getIdeasFilteredByTitle = (word) => {
     return data.filter((item) => item.title.toLowerCase().includes(word));
