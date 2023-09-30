@@ -19,7 +19,6 @@ function App() {
   const [content, setContent] = useState(findContent());
   
   useEffect(()=> {
-    const choice = menuChoices.find((choice) => choice.element === content);
     const newChoices = [...menuChoices];
     newChoices.forEach((choice) => (choice.active = false));
     newChoices.find((choice) => choice.element === content).active = true;

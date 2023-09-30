@@ -11,7 +11,7 @@ function ModalDiscoverMore( props ) {
             footer={props.data}
             onClose={props.close}
         >
-            <p style={{'word-break': 'normal'}}>Thanks to this solution in one month we use less plastic up to:</p>
+            <p style={{wordBreak: 'normal'}}>Thanks to this solution in one month we use less plastic up to:</p>
         </PureModal>
     </>)
 }
