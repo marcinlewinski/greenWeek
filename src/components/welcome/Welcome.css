@@ -1,0 +1,64 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 6em);
+  background-size: cover;
+}
+.welcome-img {
+  position: absolute;
+  object-fit: cover;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  opacity: 85%;
+  border-radius: 25px;
+  min-height: 300px;
+}
+
+.welcome-intro {
+  margin: 20px;
+}
+
+.welcome-text {
+  font-size: large;
+  text-align: justify;
+  padding: 0em 5em;
+  text-indent: 1em;
+}
+
+.marked-text {
+  font-weight: bold;
+  color: green;
+  cursor:pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+  .welcome-text {
+    padding: 0em 8em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .welcome-text {
+    padding: 0em 2em;
+    font-size: small;
+    font-weight: 800;
+  }
+  .text-container {
+    opacity: 90%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .welcome-text {
+    padding: 0em 0.5em;
+  }
+}

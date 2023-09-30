@@ -1,0 +1,85 @@
+.idea {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex: 1 1 23em;
+    min-width: 26vw;
+    aspect-ratio: 5/4;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    border-bottom: 2px var(--color-dark) solid;
+    margin: 0.7em;
+    background-color: var(--color-lightgray);
+}
+
+.image-wrapper{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.idea-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 300%;
+    margin: 0.5em 1em;
+}
+.idea-title{
+    margin: 0.5em 0;
+    text-align: left;
+    font-size: x-large;
+    min-height: 10%;
+}
+.idea-description{
+ font-size: small;
+ text-align: justify;
+ height: 50%;
+ text-indent: 1em;
+}
+
+.idea-btn{
+    margin: 1em 0;
+    background-color: var(--color-darkgreen);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    padding: 0.5em 0;
+    min-width: 8em;
+}
+
+.idea-btn:hover {
+	background:linear-gradient(to bottom, var(--color-green) 5%, var(--color-darkgreen) 100%);
+	background-color: var(--color-greenyellow);
+}
+
+.idea-btn:active {
+	position:relative;
+	top:1px;
+}
+
+@media only screen and (max-width: 1260px) {
+    .idea {
+        margin: 0.4em;
+        aspect-ratio: 4/5;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .idea {
+        aspect-ratio: 9/20;
+    }
+    .idea-content{
+        justify-content: flex-start;
+    }
+    .idea-description{
+        height: 70%;
+    }
+}

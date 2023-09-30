@@ -1,0 +1,43 @@
+.workshop{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2em 1em 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    border-bottom: 2px solid black;
+    background-color: var(--color-lightgray);
+}
+
+@media (min-width: 1200px) {
+    .workshop{
+        height:calc(100vh - 10em);;
+    }
+}
+
+.workshop-image-wrapper {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.workshop-description {
+    text-align: justify;
+    padding: 1em;
+    margin: 0;
+    text-indent: 1em;
+}
+.workshop-date {
+    margin: 0;
+}
+.workshop-title {
+    margin: 0;
+    padding: 1em 0 0.2em 0;
+}
+.workshop-duration, .workshop-info{
+    margin:0;
+    padding-bottom: 0.3em;
+}

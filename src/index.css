@@ -1,0 +1,28 @@
+body {
+  --font-primary: 'Montserrat';
+  --color-primary: white;
+  --color-greenyellow: #A5F200;
+  --color-lightgreen: #6eb411;
+  --color-green: #528d05;
+  --color-darkgreen: #1D7100;
+  --color-dark: #0D1137;
+  --color-lightgray: #f4f4f4;
+  --color-gray: #bbbbbb;
+  margin: 0;
+  font-family: var(--font-primary);
+  display: flex;
+  min-height: fit-content;
+  width: 100vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    width: 98vw;
+  }
+}
+
